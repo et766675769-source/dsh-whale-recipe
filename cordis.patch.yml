@@ -1,0 +1,8 @@
+# Bundle patch for dsh-whale-recipe.
+#
+# 这个包是 profile 层（不是惰性依赖）：下面这行把宿主半边 lib/index.js 挂上去，
+# 它通过 `webserver/index-inject` 组合事件，在每个 index.html 响应里注入一段
+# shadow-root 悬浮菜谱墙。宿主半边不注入任何 Service，页面没人打开时空转也不花钱。
+- insert:
+    - id: whale-recipe
+      name: dsh-whale-recipe

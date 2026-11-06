@@ -88,7 +88,7 @@
 }
 .card:active { cursor: grabbing; }
 .card:hover { border-color: var(--whale-accent, #4a8dc7); }
-.card img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 8px; }
+.card img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: contain; border-radius: 8px; }
 .card .nm { font-size: 10px; line-height: 1.25; margin-top: 3px; word-break: break-all; }
 
 .cp {
@@ -127,7 +127,7 @@
   cursor: pointer;
 }
 .dmeta { font-size: 11px; color: var(--whale-fg-muted, #9aa0a6); margin-top: -4px; }
-.dimg { width: 100%; border-radius: 10px; display: block; }
+.dimg { display: block; width: 100%; max-width: 128px; height: auto; border-radius: 10px; }
 
 .bars { display: flex; flex-direction: column; gap: 4px; }
 .brow { display: grid; grid-template-columns: 26px 1fr 36px; gap: 6px; align-items: center; font-size: 11px; }
